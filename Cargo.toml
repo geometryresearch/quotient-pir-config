@@ -1,0 +1,24 @@
+[package]
+name = "quotient-pir-config"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+clap = { version = "4.1.8", features = ["derive", "cargo"] }
+clap-num = { version = "1.0.2" }
+ark-poly = "0.3.0"
+ark-ec = "0.3.0"
+ark-ff = "0.3.0"
+ark-std = "0.3.0"
+ark-bn254 = "0.3.0"
+ppot-rs = "0.1.1"
+hex = "0.4.3"
+quotient-pir = { git = "https://github.com/geometryresearch/quotient-pir/", branch = "no-cdylib" }
+
+[dev-dependencies]
+
+[[bin]]
+edition = "2021"
+name = "config"
+path = "src/main.rs"
