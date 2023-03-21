@@ -20,6 +20,6 @@ cargo build --release
 
 Run the `config` binary:
 
-```
+```bash
 cargo run --release --bin config -- -l 10 --ptau 10.ptau --output config_10
 ```
